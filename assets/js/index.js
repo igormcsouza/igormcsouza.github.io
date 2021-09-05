@@ -1,3 +1,29 @@
+// Darkmode
+
+let darkModeOn = false;
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        darkModeOn = true;
+    } else {
+        if (document.body.classList.contains("dark-mode")) {
+            darkModeOn = true;
+        } else {
+            darkModeOn = false;
+        }
+    }
+    
+    if (darkModeOn) {
+        if (!document.body.classList.contains("dark-mode")) {
+            document.body.classList.add("dark-mode");
+        }
+    } else {
+        if (document.body.classList.contains("dark-mode")) {
+            document.body.classList.remove("dark-mode");
+        }
+    }
+})
+
 // Add my age according to the current date
 
 function calculate_age(dob) {
