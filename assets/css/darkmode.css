@@ -1,4 +1,6 @@
-/* based on https://unpkg.com/bootstrap-darkmode@0.7.0/dist/darktheme.css */
+/* Thanks to Code Tube for bringing this tutorial
+
+based on https://unpkg.com/bootstrap-darkmode@0.7.0/dist/darktheme.css */
 
 @media(prefers-color-scheme: dark) {
     .dark-mode {
