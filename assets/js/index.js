@@ -6,5 +6,24 @@ function calculate_age(dob) {
     return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
 
-document.getElementById('my-age').innerHTML = calculate_age(
-    new Date(1994, 9, 9))
+if (document.getElementById('my-age')) {
+    document.getElementById('my-age').innerHTML = calculate_age(
+        new Date(1994, 9, 9)
+    )
+}
+    
+// Progress Bar
+
+let processScroll = () => {
+    let docElem = document.documentElement,
+    docBody = document.body,
+    scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
+    scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
+    scrollPercent = (scrollTop / scrollBottom) * 100 + '%';
+    
+    console.log(scrollPercent)
+    
+    document.getElementById("progress-bar").style.setProperty("--scrollAmount", scrollPercent);
+}
+
+document.addEventListener("scroll", processScroll);
