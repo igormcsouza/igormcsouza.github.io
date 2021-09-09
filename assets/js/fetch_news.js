@@ -12,10 +12,24 @@ fetch('http://localhost:8001/fetch', {
 }).then(function (data) {
 	// This is the JSON from our response
     for (i in data['headlines']) {
+        let htmlstring = `
+        <div class="card-body">
+            <h5 class="card-title">${data['headlines'][i][0]}</h5>
+            <p class="card-text">
+                ${data['headlines'][i][2]}
+            </p>
+            <a href="https://${data['headlines'][i][1]}" class="btn btn-primary">
+                More
+            </a>
+        </div>
+        `
         let div = document.createElement('div')
-        div.innerText = data['headlines'][i]
+        div.innerHTML = htmlstring.trim()
+        div.className = "card col-sm-3 m-2"
+        div.style = "max-width: 15rem;"
+
         document.getElementById("news-from-api").appendChild(div)
-        if (i == 10) break
+        if (i == 11) break
     }
 	console.log(data);
 }).catch(function (err) {
