@@ -11,6 +11,12 @@ fetch('http://localhost:8001/fetch', {
 	}
 }).then(function (data) {
 	// This is the JSON from our response
+    for (i in data['headlines']) {
+        let div = document.createElement('div')
+        div.innerText = data['headlines'][i]
+        document.getElementById("news-from-api").appendChild(div)
+        if (i == 10) break
+    }
 	console.log(data);
 }).catch(function (err) {
 	// There was an error
