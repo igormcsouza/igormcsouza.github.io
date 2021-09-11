@@ -11,6 +11,11 @@ fetch('http://localhost:8001/fetch', {
 	}
 }).then(function (data) {
 	// This is the JSON from our response
+    newsFromApi = document.getElementById("news-from-api")
+    loading = document.getElementById("news-from-api-loading")
+
+    newsFromApi.removeChild(loading)
+
     for (i in data['headlines']) {
         let htmlstring = `
         <div class="card-body">
@@ -25,10 +30,9 @@ fetch('http://localhost:8001/fetch', {
         `
         let div = document.createElement('div')
         div.innerHTML = htmlstring.trim()
-        div.className = "card col-sm-3 m-2"
-        div.style = "max-width: 15rem;"
+        div.className = "card col-lg-3 col-md-4 col-sm-6"
 
-        document.getElementById("news-from-api").appendChild(div)
+        newsFromApi.appendChild(div)
         if (i == 11) break
     }
 	console.log(data);
