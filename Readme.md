@@ -21,4 +21,6 @@ what I can do here.
 
 ## Troubleshoot
 
-* Nothing here so far.
+* _How to get Dark Theme?_ I found out
+[this](https://www.youtube.com/watch?v=GAxGlbJChJg) tutorial that add dark
+theme on your bootstrap5 project.
