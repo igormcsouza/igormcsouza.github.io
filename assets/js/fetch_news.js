@@ -1,4 +1,4 @@
-fetch('http://localhost:8001/fetch', {
+fetch('https://news-api-d1e5.herokuapp.com/fetch', {
 	method: 'POST',
 	body: JSON.stringify({topic: "Machine Learning"}),
 	headers: {'Content-Type': 'application/json'}
