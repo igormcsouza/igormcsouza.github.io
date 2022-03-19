@@ -10,6 +10,9 @@
   <link rel="shortcut icon" href="/assets/img/favicon.ico"/>
   <link rel="stylesheet" href="/assets/css/index.css"/>
   <link rel="stylesheet" href="/assets/css/darkmode.css"/>
+
+  <!-- Populate the page with the stored data -->
+  <script type="module" src="/assets/js/populate.js"></script>
   
   <!-- Add Bootstrap Css files -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -75,15 +78,10 @@
               <p class="card-text">
                 &#128106 Have a wife and a kid <br>
                 &#127891 Undergraduate in Software Engineering <br>
-                &#127981 Work at <a href="https://leadfortaleza.com.br/portal">Dell Lead</a> <br>
+                &#127981 Work at <a id="work.linkedin"><span id="work.workplace"></span></a> <br>
                 &#128049 Have three kittens <br>
               </p>
-              <p class="card-text">
-                Hey! Just a little about me! I work with data science and python development. I've 
-                participated in many projects such as Image Recognition, Bot Builder, Statistical
-                Analysis and API development. All of them aiming to help data to become useful
-                information in the right hands.
-              </p>
+              <p id="personal.bio" class="card-text"></p>
               <p class="card-text my-3">
                 <small class="text-muted">
                   Igor Souza - <span id="my-age"></span> - Brazil
