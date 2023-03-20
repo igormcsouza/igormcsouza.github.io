@@ -1,4 +1,4 @@
-fetch('https://news-api-d1e5.herokuapp.com/fetch', {
+fetch('https://news-api-8597.fly.dev/fetch', {
 	method: 'POST',
 	body: JSON.stringify({topic: "Machine Learning"}),
 	headers: {'Content-Type': 'application/json'}
