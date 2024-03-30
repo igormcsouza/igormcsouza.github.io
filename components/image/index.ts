@@ -1,0 +1,8 @@
+export { default as MainImage } from "./main.png"
+export { default as NewsApiImage } from "./news-api.png"
+export { default as PymetaheuristicsImage } from "./pymetaheuristics.png"
+export { default as TodolistImage } from "./todolist.png"
+export { default as Talk2WebImage } from "./talktoweb.png"
+export { default as PersonalBinImage } from "./personal-bin.png"
+export { default as NutritionAppImage } from "./nutrition-app.png"
+export { default as PureTodoImage } from "./pure-todo.png"
