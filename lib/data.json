@@ -1,0 +1,193 @@
+{
+  "personal": {
+    "name": "Igor Souza",
+    "bio": "Hey! Just a little about me! I work with data science and python development. I've participated in many projects such as Image Recognition, Bot Builder, Statistical Analysis and API development. All of them aiming to help data to become useful information in the right hands. I also own a bussiness called Soft Medium, which help other companies to develop their own softwares.",
+    "phone": "(+55) 85 99839-2799",
+    "email": "igormcsouza@gmail.com",
+    "location": "Eusébio/Ceará, Brazil",
+    "skills": [
+      {
+        "name": "python",
+        "link": "https://www.python.org/"
+      },
+      {
+        "name": "langchain",
+        "link": "https://langchain.com/"
+      },
+      {
+        "name": "tensorflow",
+        "link": "https://www.tensorflow.org/"
+      },
+      {
+        "name": "keras",
+        "link": "https://keras.io/"
+      },
+      {
+        "name": "scikitlearn",
+        "link": "https://scikit-learn.org/"
+      },
+      {
+        "name": "pandas",
+        "link": "https://pandas.pydata.org/"
+      },
+      {
+        "name": "numpy",
+        "link": "https://numpy.org/"
+      },
+      {
+        "name": "flask",
+        "link": "https://flask.palletsprojects.com/en/1.1.x/"
+      },
+      {
+        "name": "django",
+        "link": "https://www.djangoproject.com/"
+      },
+      {
+        "name": "fastapi",
+        "link": "https://fastapi.tiangolo.com/"
+      },
+      {
+        "name": "docker",
+        "link": "https://www.docker.com/"
+      },
+      {
+        "name": "kubernetes",
+        "link": "https://kubernetes.io/"
+      },
+      {
+        "name": "git",
+        "link": "https://git-scm.com/"
+      },
+      {
+        "name": "linux",
+        "link": "https://www.linuxfoundation.org/"
+      },
+      {
+        "name": "nextjs",
+        "link": "https://nextjs.org/"
+      },
+      {
+        "name": "tailwindcss",
+        "link": "https://tailwindcss.com/"
+      }
+    ],
+    "resume": [
+      {
+        "lang": "en",
+        "link": "https://igormcsouza.notion.site/Online-Resume-1f64209285184377b86a49baa9998edf"
+      },
+      {
+        "lang": "pt",
+        "link": "https://igormcsouza.notion.site/Online-Resume-1f64209285184377b86a49baa9998edf"
+      }
+    ],
+    "work": {
+      "workplace": "Dataart",
+      "linkedin": "https://www.linkedin.com/company/dataart/"
+    },
+    "socialMedias": {
+      "linkedin": "https://www.linkedin.com/in/igormcsouza/",
+      "github": "https://github.com/igormcsouza",
+      "instagram": "https://www.instagram.com/igormcsouza/",
+      "x": "https://www.x.com/igormcsouza"
+    }
+  },
+  "history": [
+    {
+      "year": "2012",
+      "event": "Started my journey in the Development world",
+      "description": "Entered the University to study Applied Mathematics and started to learn programming languages"
+    },
+    {
+      "year": "2014",
+      "event": "Left to Serve a Mission in Africa",
+      "description": "During this time, I've the oportunity to help people and get to know about their culture"
+    },
+    {
+      "year": "2017",
+      "event": "Start to work as Teacher",
+      "description": "Became an english teacher for kids in a big school in my city! A great place to be at that time!"
+    },
+    {
+      "year": "2017",
+      "event": "Became member of DualJr (Junior Enterprise)",
+      "description": "This was a great archivment in my carrer, I've learned a lot about software development and project management"
+    },
+    {
+      "year": "2017",
+      "event": "Got Married to the love of my life",
+      "description": "My spouse and I started this family with the objective to grow together and help one another"
+    },
+    {
+      "year": "2019",
+      "event": "Start working with Machine Learning",
+      "description": "Changed my carrer to work with python, when development Machine Learning Models, that was a great step on the right direction"
+    },
+    {
+      "year": "2021",
+      "event": "Changed my course at university to specialize in Software Engineering",
+      "description": "Tho I kept my desire to study Data Science, I loved to create software and manage teams with that in mind"
+    },
+    {
+      "year": "2022",
+      "event": "Moved to Eusébio and Started to work at Dataart",
+      "description": "That year was really challenging because of the many changes I had in life, but I'm happy with the results I've got so far!"
+    }
+  ],
+  "portifolio": [
+    {
+      "name": "Talk2Web",
+      "image": "talktoweb",
+      "description": "Project to facilitate interactions with web pages, youtube videos and online pdfs. I needed a way to have chatgpt but with the knowledge of those documents, so I created this project which works wonderfully!",
+      "links": {
+        "website": "https://hub.docker.com/r/igormcsouza/talk2web",
+        "github": "https://github.com/igormcsouza/talk2web"
+      }
+    },
+    {
+      "name": "Personal Bin",
+      "image": "personal-bin",
+      "description": "Some automations that I find usefull on my day by day activities. There are bash scripts and python scripts to do a lot of stuff and even use projects I build myself.",
+      "links": {
+        "website": "",
+        "github": "https://github.com/igormcsouza/personal-bin"
+      }
+    },
+    {
+      "name": "News API",
+      "image": "news-api",
+      "description": "This is an api to fetch news from Google News. It allow users to get information about an specific topic. This tools is being used here on my website.",
+      "links": {
+        "website": "https://news-api-8597.fly.dev/docs",
+        "github": "https://github.com/igormcsouza/news-api"
+      }
+    },
+    {
+      "name": "Nutrition App",
+      "image": "nutrition-app",
+      "description": "Inspired on my wife, I developed this app to identify types of food in a plate and tell how much of each type are there, a nutritionist will love that! :D",
+      "links": {
+        "website": "",
+        "github": "https://github.com/igormcsouza/nutrition-app"
+      }
+    },
+    {
+      "name": "Pymetaheuristics",
+      "image": "pymetaheuristics",
+      "description": "A python package to solve optimization problems using metaheuristics. It is a simple and easy to use developed to help student that are starting in this area.",
+      "links": {
+        "website": "https://pypi.org/project/pymetaheuristics/",
+        "github": "https://github.com/igormcsouza/pymetaheuristics"
+      }
+    },
+    {
+      "name": "Pure Todo",
+      "image": "pure-todo",
+      "description": "Pure todo is a project to test the WSGI protocol in python, we usually use a framework to do web development, but how python deals internally with the communication? This is a project to test that and find out!",
+      "links": {
+        "website": "",
+        "github": "https://github.com/igormcsouza/pure-todo"
+      }
+    }
+  ]
+}

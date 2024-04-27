@@ -1,0 +1,4 @@
+.mask-fade {
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+}
