@@ -22,13 +22,26 @@ export const metadata: Metadata = {
   },
 };
 
+// Runs before first paint so the page never flashes the wrong theme.
+// Must mirror determineTheme() in context/theme.tsx.
+const themeInitScript = `
+try {
+  var theme = localStorage.getItem("themePreference")
+    || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.classList.add(theme);
+} catch (e) {}
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <ThemeContextProvider>
         <BodyLayout>{children}</BodyLayout>
       </ThemeContextProvider>

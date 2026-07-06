@@ -84,7 +84,7 @@ const config = {
   plugins: [require("tailwindcss-animate"), require("daisyui")],
 
   daisyui: {
-    themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    themes: ["light"], // only emit the light theme: keeps daisyUI from injecting `:root { color-scheme: dark }` under prefers-color-scheme, which broke light mode and PDF export on OS-dark machines (site colors come from our own CSS variables above)
     darkTheme: "dark", // name of one of the included themes for dark mode
     base: false, // applies background color and foreground color for root element by default
     styled: false, // include daisyUI colors and design decisions for all components
