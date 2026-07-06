@@ -20,7 +20,7 @@ function getProfileIcon(network: string) {
 
 function Banner({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="bg-zinc-100 px-4 py-2 text-sm font-bold uppercase tracking-widest text-zinc-900 break-inside-avoid">
+    <h2 className="bg-secondary px-4 py-2 text-sm font-bold uppercase tracking-widest text-secondary-foreground break-inside-avoid">
       {children}
     </h2>
   );
@@ -29,7 +29,7 @@ function Banner({ children }: { children: React.ReactNode }) {
 function Entry({ aside, children }: { aside?: React.ReactNode, children: React.ReactNode }) {
   return (
     <div className="grid gap-2 sm:grid-cols-[160px_1fr] sm:gap-x-6 break-inside-avoid">
-      <div className="text-sm text-zinc-500">{aside}</div>
+      <div className="text-sm text-muted-foreground">{aside}</div>
       <div>{children}</div>
     </div>
   );
@@ -56,7 +56,7 @@ export default function CvView({ lang }: { lang: Lang }) {
         </Button>
       </div>
 
-      <article className="flex flex-col gap-6 rounded-md bg-white p-8 text-zinc-900 shadow-lg sm:p-12 print:gap-5 print:rounded-none print:p-0 print:shadow-none">
+      <article className="flex flex-col gap-6 rounded-md border bg-card p-8 text-card-foreground shadow-lg sm:p-12 print:gap-5 print:rounded-none print:border-none print:p-0 print:shadow-none">
 
         {/* Header: name on the left, contacts on the right */}
         <header className="flex flex-wrap justify-between gap-6">
@@ -64,24 +64,24 @@ export default function CvView({ lang }: { lang: Lang }) {
             <h1 className="max-w-72 text-4xl font-extrabold uppercase leading-none tracking-wide sm:text-5xl">
               {cv.basics.name}
             </h1>
-            <p className="mt-3 text-zinc-500">{loc(cv.basics.label)}</p>
+            <p className="mt-3 text-muted-foreground">{loc(cv.basics.label)}</p>
           </div>
           <ul className="flex flex-col gap-2 text-sm">
             <li className="flex items-center gap-2">
-              <Phone size={14} className="shrink-0 text-zinc-500" />{cv.basics.phone}
+              <Phone size={14} className="shrink-0 text-muted-foreground" />{cv.basics.phone}
             </li>
             <li className="flex items-center gap-2">
-              <Mail size={14} className="shrink-0 text-zinc-500" />
+              <Mail size={14} className="shrink-0 text-muted-foreground" />
               <a href={`mailto:${cv.basics.email}`}>{cv.basics.email}</a>
             </li>
             <li className="flex items-center gap-2">
-              <MapPin size={14} className="shrink-0 text-zinc-500" />{loc(cv.basics.location)}
+              <MapPin size={14} className="shrink-0 text-muted-foreground" />{loc(cv.basics.location)}
             </li>
             {cv.basics.profiles.map((profile) => {
               const Icon = getProfileIcon(profile.network);
               return (
                 <li key={profile.network} className="flex items-center gap-2">
-                  <Icon size={14} className="shrink-0 text-zinc-500" />
+                  <Icon size={14} className="shrink-0 text-muted-foreground" />
                   <a href={profile.url} target="_blank" rel="noreferrer">{profile.label}</a>
                 </li>
               );
@@ -92,7 +92,7 @@ export default function CvView({ lang }: { lang: Lang }) {
         {cv.profile && (
           <section className="flex flex-col gap-3">
             <Banner>{labels.profile[lang]}</Banner>
-            <p className="text-sm leading-relaxed text-zinc-700">{loc(cv.profile)}</p>
+            <p className="text-sm leading-relaxed text-foreground/80">{loc(cv.profile)}</p>
           </section>
         )}
 
@@ -105,21 +105,21 @@ export default function CvView({ lang }: { lang: Lang }) {
                 aside={
                   <>
                     {job.url
-                      ? <a href={job.url} target="_blank" rel="noreferrer" className="block font-semibold text-zinc-700">{job.company}</a>
-                      : <span className="block font-semibold text-zinc-700">{job.company}</span>}
+                      ? <a href={job.url} target="_blank" rel="noreferrer" className="block font-semibold text-foreground/90">{job.company}</a>
+                      : <span className="block font-semibold text-foreground/90">{job.company}</span>}
                     <span className="tabular-nums">{formatDateRange(job.startDate, job.endDate, lang)}</span>
                   </>
                 }
               >
                 <h3 className="mb-1.5 text-base font-bold">{loc(job.position)}</h3>
-                <ul className="flex list-disc flex-col gap-1 pl-4 text-sm text-zinc-700">
+                <ul className="flex list-disc flex-col gap-1 pl-4 text-sm text-foreground/80">
                   {job.highlights.map((highlight, index) => (
                     <li key={index}>{loc(highlight)}</li>
                   ))}
                 </ul>
                 {job.technologies.length > 0 && (
-                  <p className="mt-1.5 text-xs text-zinc-500">
-                    <span className="font-semibold text-zinc-600">{labels.technologies[lang]}:</span>{" "}
+                  <p className="mt-1.5 text-xs text-muted-foreground">
+                    <span className="font-semibold text-foreground/80">{labels.technologies[lang]}:</span>{" "}
                     {job.technologies.join(" · ")}
                   </p>
                 )}
@@ -136,7 +136,7 @@ export default function CvView({ lang }: { lang: Lang }) {
                 key={index}
                 aside={
                   <>
-                    {education.institution && <span className="block font-semibold text-zinc-700">{education.institution}</span>}
+                    {education.institution && <span className="block font-semibold text-foreground/90">{education.institution}</span>}
                     <span className="tabular-nums">{formatDateRange(education.startDate, education.endDate, lang)}</span>
                   </>
                 }
@@ -151,7 +151,7 @@ export default function CvView({ lang }: { lang: Lang }) {
           <section className="flex flex-col gap-3">
             <Banner>{labels.courses[lang]}</Banner>
             <Entry>
-              <ul className="flex list-disc flex-col gap-1 pl-4 text-sm text-zinc-700">
+              <ul className="flex list-disc flex-col gap-1 pl-4 text-sm text-foreground/80">
                 {cv.courses.map((course, index) => (
                   <li key={index}>{loc(course)}</li>
                 ))}
@@ -162,14 +162,14 @@ export default function CvView({ lang }: { lang: Lang }) {
 
         {cv.skills.length > 0 && (
           <section className="grid gap-2 sm:grid-cols-[160px_1fr] sm:gap-x-6 break-inside-avoid">
-            <h2 className="self-start bg-zinc-100 px-4 py-2 text-sm font-bold uppercase tracking-widest text-zinc-900">
+            <h2 className="self-start bg-secondary px-4 py-2 text-sm font-bold uppercase tracking-widest text-secondary-foreground">
               {labels.skills[lang]}
             </h2>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {cv.skills.map((group, index) => (
                 <div key={index}>
                   <h3 className="mb-1.5 text-sm font-bold">{loc(group.category)}</h3>
-                  <ul className="flex flex-col gap-1 text-sm text-zinc-500">
+                  <ul className="flex flex-col gap-1 text-sm text-muted-foreground">
                     {group.items.map((item) => (
                       <li key={item}>{item}</li>
                     ))}
@@ -182,14 +182,14 @@ export default function CvView({ lang }: { lang: Lang }) {
 
         {cv.languages.length > 0 && (
           <section className="grid gap-2 sm:grid-cols-[160px_1fr] sm:gap-x-6 break-inside-avoid">
-            <h2 className="self-start bg-zinc-100 px-4 py-2 text-sm font-bold uppercase tracking-widest text-zinc-900">
+            <h2 className="self-start bg-secondary px-4 py-2 text-sm font-bold uppercase tracking-widest text-secondary-foreground">
               {labels.languages[lang]}
             </h2>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {cv.languages.map((language, index) => (
                 <div key={index}>
                   <h3 className="mb-1.5 text-sm font-bold">{loc(language.name)}</h3>
-                  <p className="text-sm text-zinc-500">{loc(language.level)}</p>
+                  <p className="text-sm text-muted-foreground">{loc(language.level)}</p>
                 </div>
               ))}
             </div>
