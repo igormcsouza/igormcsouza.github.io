@@ -64,6 +64,43 @@
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
   }
+
+  /* Same palette as .dark, applied when the OS prefers dark and no explicit
+     theme class made it onto <html> (no JS). It also signals browsers with a
+     "force dark" feature (Samsung Internet, Chrome auto-dark) that the page
+     has a native dark theme, so they render it instead of color-inverting
+     the light one. An explicit .light choice always wins via :not(). */
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+      --background: 240 10% 3.9%;
+      --foreground: 0 0% 98%;
+
+      --card: 240 10% 3.9%;
+      --card-foreground: 0 0% 98%;
+
+      --popover: 240 10% 3.9%;
+      --popover-foreground: 0 0% 98%;
+
+      --primary: 0 0% 98%;
+      --primary-foreground: 240 5.9% 10%;
+
+      --secondary: 240 3.7% 15.9%;
+      --secondary-foreground: 0 0% 98%;
+
+      --muted: 240 3.7% 15.9%;
+      --muted-foreground: 240 5% 64.9%;
+
+      --accent: 240 3.7% 15.9%;
+      --accent-foreground: 0 0% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 240 3.7% 15.9%;
+      --input: 240 3.7% 15.9%;
+      --ring: 240 4.9% 83.9%;
+    }
+  }
 }
 
 /* Tell the browser which scheme the page is really in (the theme class lives
@@ -75,6 +112,14 @@
 :root {
   color-scheme: light;
   color-scheme: only light;
+}
+
+/* Mirrors the variable fallback above: correct scheme when no theme class is
+   present, and a dark-support signal for force-dark browsers. */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    color-scheme: dark;
+  }
 }
 
 :root.dark {
@@ -110,10 +155,11 @@
     margin: 12mm;
   }
 
-  /* :root specificity so this beats any :root-level color-scheme rule
-     (e.g. from plugins); "only light" keeps the printed canvas white even
-     when the OS is in dark mode. */
-  :root, :root.dark {
+  /* :root:not(.light) matches the specificity of the prefers-color-scheme
+     fallbacks above so print beats them too (later in source wins the tie);
+     "only light" keeps the printed canvas white even when the OS is in dark
+     mode. */
+  :root, :root.dark, :root:not(.light) {
     color-scheme: only light;
   }
 
@@ -122,7 +168,7 @@
   }
 
   /* The CV always exports in light mode, whatever the on-screen theme */
-  :root, :root.dark {
+  :root, :root.dark, :root:not(.light) {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;

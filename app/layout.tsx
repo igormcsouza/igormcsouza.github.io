@@ -40,6 +40,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Declares native light+dark support so force-dark browsers
+            (e.g. Samsung Internet) honor the page's own theme instead of
+            color-inverting it. The CSS color-scheme rules in globals.css
+            still decide the actual scheme per theme class. */}
+        <meta name="color-scheme" content="light dark" />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <ThemeContextProvider>

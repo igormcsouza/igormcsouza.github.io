@@ -6,18 +6,20 @@ import DesktopMenu from "./desktop-menu";
 
 export default function Header(){
 
+  // Root-relative so the anchors work from any route (e.g. /cv/en), not
+  // only from the homepage itself.
   const menuItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "News", link: "#news" },
-    { name: "Contact", link: "#contact" },
+    { name: "About", link: "/#about" },
+    { name: "Projects", link: "/#projects" },
+    { name: "News", link: "/#news" },
+    { name: "Contact", link: "/#contact" },
     { name: "Blog", link: "https://igormcsouza.github.io/blog" },
   ];
 
   return (
     <header className="py-6 lg:py-10 print:hidden">
       <div className="flex gap-4 flex-row justify-between items-center md:gap-8">
-        <Link className="hidden lg:inline-block" href="#">
+        <Link className="hidden lg:inline-block" href="/">
           <LogoIcon className="dark:text-zinc-800 text-zinc-200 text-4xl" />
         </Link>
         <DesktopMenu menuItems={menuItems} />
