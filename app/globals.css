@@ -66,6 +66,21 @@
   }
 }
 
+/* Tell the browser which scheme the page is really in (the theme class lives
+   on <html>). Kept outside @layer so it always beats layered rules, e.g.
+   daisyUI's `:root { color-scheme }`. "only" opts the light theme out of
+   browser auto-darkening (Chrome's darker theme), which would otherwise
+   repaint it as just another dark mode; the plain value first is the fallback
+   for browsers without "only" support. */
+:root {
+  color-scheme: light;
+  color-scheme: only light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
 /* Removing the vertical scrollbar from the browsers */
 /* Safari and Chrome */
 ::-webkit-scrollbar {
@@ -95,8 +110,11 @@
     margin: 12mm;
   }
 
-  html {
-    color-scheme: light;
+  /* :root specificity so this beats any :root-level color-scheme rule
+     (e.g. from plugins); "only light" keeps the printed canvas white even
+     when the OS is in dark mode. */
+  :root, :root.dark {
+    color-scheme: only light;
   }
 
   body {
@@ -104,16 +122,24 @@
   }
 
   /* The CV always exports in light mode, whatever the on-screen theme */
-  body, body.dark {
+  :root, :root.dark {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
     --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
   }
 
   /* Keep the grey section banners visible on paper */

@@ -15,19 +15,28 @@ const determineTheme = () => {
   return localTheme || systemTheme
 }
 
-export default function ThemeContextProvider({ children }: { children: ReactNode }) {  
+// The theme class lives on <html> so it controls CSS variables, Tailwind's
+// dark: variants and the browser color-scheme everywhere, including before
+// hydration (see the inline script in app/layout.tsx).
+const applyTheme = (choise: string) => {
+  document.documentElement.classList.remove(choise === "dark" ? "light" : "dark")
+  document.documentElement.classList.add(choise)
+}
+
+export default function ThemeContextProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<string>()
 
   useEffect(() => {
-    setTheme(determineTheme())
-  }, [])
-  
-  const handleChangeTheme = useCallback((choise: string) => {
-    setTheme(choise)
-    localStorage.setItem("themePreference", choise)
+    const initial = determineTheme()
+    setTheme(initial)
+    applyTheme(initial)
   }, [])
 
-  if (!theme && process.env.NODE_ENV != "development") return null  // TODO: Find a way to fix this monstrosity!
+  const handleChangeTheme = useCallback((choise: string) => {
+    setTheme(choise)
+    applyTheme(choise)
+    localStorage.setItem("themePreference", choise)
+  }, [])
 
   return (
     <ThemeContext.Provider value={{ theme, handleChangeTheme }}>
