@@ -1,0 +1,202 @@
+{
+  "basics": {
+    "name": "Igor Souza",
+    "label": {
+      "en": "Software Engineer",
+      "pt": "Engenheiro de Software"
+    },
+    "email": "igormcsouza@gmail.com",
+    "phone": "(+55) 85 99839-2799",
+    "location": {
+      "en": "Eusébio/Ceará, Brazil",
+      "pt": "Eusébio/Ceará, Brasil"
+    },
+    "profiles": [
+      {
+        "network": "linkedin",
+        "label": "linkedin.com/in/igormcsouza",
+        "url": "https://www.linkedin.com/in/igormcsouza/"
+      },
+      {
+        "network": "github",
+        "label": "github.com/igormcsouza",
+        "url": "https://github.com/igormcsouza"
+      }
+    ]
+  },
+  "profile": {
+    "en": "Experienced in machine learning (Python, TensorFlow, Torch), computer vision, backend development (Flask, Django and FastAPI), Docker, Kubernetes and cloud platforms (Azure, AWS, GCP). Skilled in system administration and infrastructure management (Linux, Docker, Kubernetes, RabbitMQ). Proficient in front-end frameworks (Vue, React) and skilled in system optimization and troubleshooting.",
+    "pt": "Experiente em machine learning (Python, TensorFlow, Torch), visão computacional, desenvolvimento backend (Flask, Django e FastAPI), Docker, Kubernetes e plataformas de nuvem (Azure, AWS, GCP). Habilidoso em administração de sistemas e gerenciamento de infraestrutura (Linux, Docker, Kubernetes, RabbitMQ). Proficiente em frameworks front-end (Vue, React) e em otimização e resolução de problemas de sistemas."
+  },
+  "work": [
+    {
+      "company": "DataArt",
+      "url": "https://www.dataart.com/",
+      "position": {
+        "en": "Python Engineer Middle",
+        "pt": "Engenheiro Python Pleno"
+      },
+      "startDate": "2022-05",
+      "endDate": null,
+      "highlights": [
+        {
+          "en": "Managed an upgrade project involving JavaScript, Java, Python and Perl components.",
+          "pt": "Gerenciei um projeto de atualização envolvendo componentes em JavaScript, Java, Python e Perl."
+        },
+        {
+          "en": "Played a key role in OS upgrades and server communication optimizations.",
+          "pt": "Tive papel fundamental em atualizações de sistema operacional e otimizações de comunicação entre servidores."
+        },
+        {
+          "en": "Deepened expertise in Python, Linux system administration and networking.",
+          "pt": "Aprofundei conhecimentos em Python, administração de sistemas Linux e redes."
+        }
+      ],
+      "technologies": ["Python", "Linux", "Networking", "Java", "Perl"]
+    },
+    {
+      "company": "Liber Capital",
+      "url": "https://libercapital.com.br/",
+      "position": {
+        "en": "Python Engineer Middle",
+        "pt": "Engenheiro Python Pleno"
+      },
+      "startDate": "2021-12",
+      "endDate": "2022-05",
+      "highlights": [
+        {
+          "en": "Provided backend support in Python (Flask) for financial systems.",
+          "pt": "Prestei suporte backend em Python (Flask) para sistemas financeiros."
+        },
+        {
+          "en": "Worked on infrastructure using Docker, Kubernetes, RabbitMQ and GCP.",
+          "pt": "Trabalhei na infraestrutura utilizando Docker, Kubernetes, RabbitMQ e GCP."
+        },
+        {
+          "en": "Resolved communication bugs between Django and Ruby components, gaining expertise in system administration and troubleshooting.",
+          "pt": "Resolvi bugs de comunicação entre componentes Django e Ruby, ganhando experiência em administração de sistemas e resolução de problemas."
+        }
+      ],
+      "technologies": ["Python", "Flask", "Docker", "Kubernetes", "RabbitMQ", "GCP"]
+    },
+    {
+      "company": "Dell Lead",
+      "url": "https://lead.dell.com/",
+      "position": {
+        "en": "Python Engineer Junior",
+        "pt": "Engenheiro Python Júnior"
+      },
+      "startDate": "2020-04",
+      "endDate": "2021-12",
+      "highlights": [
+        {
+          "en": "Led projects in computer vision for accessibility, including models for image-to-text conversion.",
+          "pt": "Liderei projetos de visão computacional para acessibilidade, incluindo modelos de conversão de imagem em texto."
+        },
+        {
+          "en": "Developed a Telegram bot for contextual image responses.",
+          "pt": "Desenvolvi um bot de Telegram para respostas contextuais baseadas em imagens."
+        },
+        {
+          "en": "Utilized TensorFlow, Torch, Vue, Streamlit, Flask, React, Docker, Azure and AWS for development and deployment.",
+          "pt": "Utilizei TensorFlow, Torch, Vue, Streamlit, Flask, React, Docker, Azure e AWS para desenvolvimento e implantação."
+        }
+      ],
+      "technologies": ["TensorFlow", "Torch", "Vue", "React", "Streamlit", "Docker", "Azure", "AWS"]
+    },
+    {
+      "company": "Deeper Systems",
+      "url": "https://www.deepersystems.com/",
+      "position": {
+        "en": "Python Engineer Junior",
+        "pt": "Engenheiro Python Júnior"
+      },
+      "startDate": "2019-09",
+      "endDate": "2020-04",
+      "highlights": [
+        {
+          "en": "Developed machine learning models, especially in computer vision, for various projects.",
+          "pt": "Desenvolvi modelos de machine learning, especialmente em visão computacional, para diversos projetos."
+        },
+        {
+          "en": "Integrated models into Flask APIs using Python, TensorFlow, Torch, OpenCV, OpenPose and Selenium.",
+          "pt": "Integrei modelos em APIs Flask utilizando Python, TensorFlow, Torch, OpenCV, OpenPose e Selenium."
+        },
+        {
+          "en": "Proficient use of Docker, Linux and SSH for development and deployment.",
+          "pt": "Uso proficiente de Docker, Linux e SSH para desenvolvimento e implantação."
+        }
+      ],
+      "technologies": ["Python", "TensorFlow", "OpenCV", "Flask", "Docker", "Linux"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "",
+      "degree": {
+        "en": "Bachelor in Software Engineering",
+        "pt": "Bacharelado em Engenharia de Software"
+      },
+      "startDate": null,
+      "endDate": null
+    }
+  ],
+  "courses": [
+    "NLP - Natural Language Processing",
+    "REST Api com Python e Flask",
+    "Docker and Kubernetes: The Complete Guide",
+    "Artificial Intelligence: Reinforcement Learning in Python"
+  ],
+  "skills": [
+    {
+      "category": {
+        "en": "Machine Learning",
+        "pt": "Machine Learning"
+      },
+      "items": ["Scikit-learn", "TensorFlow", "Torch", "LLMs", "Langchain", "Computer Vision"]
+    },
+    {
+      "category": {
+        "en": "Backend",
+        "pt": "Backend"
+      },
+      "items": ["Python", "Flask", "Django", "FastAPI", "Next.js"]
+    },
+    {
+      "category": {
+        "en": "Infrastructure",
+        "pt": "Infraestrutura"
+      },
+      "items": ["Docker", "Kubernetes", "AMQP", "Linux", "Azure", "AWS", "GCP"]
+    },
+    {
+      "category": {
+        "en": "Frontend",
+        "pt": "Frontend"
+      },
+      "items": ["React", "Vue", "TailwindCSS"]
+    }
+  ],
+  "languages": [
+    {
+      "name": {
+        "en": "Portuguese",
+        "pt": "Português"
+      },
+      "level": {
+        "en": "Native",
+        "pt": "Nativo"
+      }
+    },
+    {
+      "name": {
+        "en": "English",
+        "pt": "Inglês"
+      },
+      "level": {
+        "en": "Fluent",
+        "pt": "Fluente"
+      }
+    }
+  ]
+}

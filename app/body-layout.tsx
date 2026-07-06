@@ -11,7 +11,7 @@ export function BodyLayout({ children }: { children: React.ReactNode }) {
   const { theme } = useThemeContext();
 
   return (
-    <body className={`flex flex-col min-h-[100vh] container max-w-6xl ${inter.className} ${theme}`}>
+    <body className={`flex flex-col min-h-[100vh] container max-w-6xl print:max-w-none print:p-0 ${inter.className} ${theme}`}>
       <Header />
       <main className="flex-grow">{children}</main>
       <Footer />

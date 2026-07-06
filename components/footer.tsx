@@ -5,7 +5,7 @@ import { data } from "@/lib/utils";
 
 export default function Footer() {
   return (
-    <footer id="footer" className="py-6 lg:py-10">
+    <footer id="footer" className="py-6 lg:py-10 print:hidden">
       <hr className="my-5"/>
       <div className="flex flex-col sm:flex-row justify-between gap-8 items-center text-muted-foreground">
         <ul className="sm:w-28 flex flex-col items-center gap-2 px-4">

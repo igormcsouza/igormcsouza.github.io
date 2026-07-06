@@ -87,3 +87,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Print setup for the CV pages: white paper, no site chrome */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  body {
+    background: white !important;
+  }
+}

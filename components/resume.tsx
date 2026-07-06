@@ -15,7 +15,7 @@ export default function Resume() {
             return (
               <li key={index}>
                 <Button className="py-7" variant="ghost">
-                  <Link href={resume.link} target="_blank">
+                  <Link href={resume.link}>
                     <Icon className="text-4xl" />
                   </Link>
                 </Button>
