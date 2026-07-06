@@ -15,7 +15,7 @@ export default function Header(){
   ];
 
   return (
-    <header className="py-6 lg:py-10">
+    <header className="py-6 lg:py-10 print:hidden">
       <div className="flex gap-4 flex-row justify-between items-center md:gap-8">
         <Link className="hidden lg:inline-block" href="#">
           <LogoIcon className="dark:text-zinc-800 text-zinc-200 text-4xl" />
