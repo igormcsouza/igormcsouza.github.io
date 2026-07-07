@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="flex flex-col sm:flex-row justify-between gap-8 items-center text-muted-foreground">
         <ul className="sm:w-28 flex flex-col items-center gap-2 px-4">
           <li>
-            <Link className="hover:underline underline-offset-4" href="#">
+            <Link className="hover:underline underline-offset-4" href="/">
               Home
             </Link>
           </li>
