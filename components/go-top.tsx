@@ -11,7 +11,6 @@ export default function GoTop() {
 
   useEffect(() => {
     const handleSetShowGoTop = () => {
-      console.log(window.scrollY)
       if (window.scrollY > limit) {
         setShowGoTop(true);
       }
