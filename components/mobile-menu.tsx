@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
 
 export default function MobileMenu({ menuItems }: { menuItems: { name: string, link: string }[] }) {
@@ -14,9 +14,11 @@ export default function MobileMenu({ menuItems }: { menuItems: { name: string, l
           <ul className="flex flex-col gap-4">
             {menuItems.map((item, index) => (
               <li key={index}>
-                <Link href={item.link}>
-                  <Button variant={"ghost"}>{item.name}</Button>
-                </Link>
+                <SheetClose asChild>
+                  <Link href={item.link}>
+                    <Button variant={"ghost"}>{item.name}</Button>
+                  </Link>
+                </SheetClose>
               </li>
             ))}
           </ul>
