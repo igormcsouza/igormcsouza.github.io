@@ -1,6 +1,7 @@
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import GoTop from "@/components/go-top";
+import HashScroll from "@/components/hash-scroll";
 import Hero from "@/components/hero";
 import News from "@/components/news";
 import Projects from "@/components/projects";
@@ -9,6 +10,7 @@ import Resume from "@/components/resume";
 export default function Homepage() {
   return (
     <div className="flex flex-col gap-16 my-10">
+      <HashScroll />
       <Hero />
       <Resume />
       <About />

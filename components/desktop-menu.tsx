@@ -1,7 +1,4 @@
-import Link from "next/link";
-import { Button } from "./ui/button";
-
-import React from 'react'
+import NavLink from "./nav-link";
 
 export default function DesktopMenu({ menuItems }: { menuItems: {name: string, link: string}[]}) {
   return (
@@ -9,9 +6,7 @@ export default function DesktopMenu({ menuItems }: { menuItems: {name: string, l
       <ul className="flex flex-wrap sm:gap-16">
         {menuItems.map((item, index) => (
           <li key={index}>
-            <Link href={item.link}>
-              <Button variant={"ghost"}>{item.name}</Button>
-            </Link>
+            <NavLink item={item} />
           </li>
         ))}
       </ul>
