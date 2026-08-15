@@ -8,10 +8,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export function BodyLayout({ children }: { children: React.ReactNode }) {
   return (
-    <body className={`flex flex-col min-h-[100vh] container max-w-6xl print:max-w-none print:p-0 ${inter.className}`}>
-      <Header />
-      <main className="flex-grow">{children}</main>
-      <Footer />
+    <body className={`flex flex-col min-h-[100vh] ${inter.className}`}>
+      <div className="flex flex-col min-h-[100vh] container max-w-6xl print:max-w-none print:p-0">
+        <Header />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </div>
     </body>
   );
 }
