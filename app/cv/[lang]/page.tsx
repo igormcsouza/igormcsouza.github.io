@@ -10,8 +10,9 @@ export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
 }
 
-export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
-  const description = isLang(params.lang) && params.lang === "pt"
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const description = isLang(lang) && lang === "pt"
     ? `Currículo de ${cv.basics.name}`
     : `Resume of ${cv.basics.name}`;
   return {
@@ -20,7 +21,8 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
   };
 }
 
-export default function CvPage({ params }: { params: { lang: string } }) {
-  if (!isLang(params.lang)) notFound();
-  return <CvView lang={params.lang} />;
+export default async function CvPage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  if (!isLang(lang)) notFound();
+  return <CvView lang={lang} />;
 }
