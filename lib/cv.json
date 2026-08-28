@@ -25,8 +25,8 @@
     ]
   },
   "profile": {
-    "en": "Experienced in machine learning (Python, TensorFlow, Torch), computer vision, backend development (Flask, Django and FastAPI), Docker, Kubernetes and cloud platforms (Azure, AWS, GCP). Skilled in system administration and infrastructure management (Linux, Docker, Kubernetes, RabbitMQ). Proficient in front-end frameworks (Vue, React) and skilled in system optimization and troubleshooting.",
-    "pt": "Experiente em machine learning (Python, TensorFlow, Torch), visão computacional, desenvolvimento backend (Flask, Django e FastAPI), Docker, Kubernetes e plataformas de nuvem (Azure, AWS, GCP). Habilidoso em administração de sistemas e gerenciamento de infraestrutura (Linux, Docker, Kubernetes, RabbitMQ). Proficiente em frameworks front-end (Vue, React) e em otimização e resolução de problemas de sistemas."
+    "en": "Backend-focused engineer who builds and ships machine learning models end-to-end, from training (Python, TensorFlow, Torch, computer vision) to production APIs (Flask, Django, FastAPI). Comfortable owning distributed systems on Kubernetes and Docker, debugging across service boundaries (RabbitMQ, Kafka, REST) and languages (Python, Ruby, Java), and managing cloud infrastructure (Azure, AWS, GCP) and Linux internals. Also contributes on the frontend (Vue, React) when a project needs it.",
+    "pt": "Engenheiro com foco em backend que constrói e entrega modelos de machine learning de ponta a ponta, do treinamento (Python, TensorFlow, Torch, visão computacional) a APIs em produção (Flask, Django, FastAPI). Confortável em manter sistemas distribuídos em Kubernetes e Docker, depurar problemas entre serviços (RabbitMQ, Kafka, REST) e linguagens (Python, Ruby, Java), e gerenciar infraestrutura em nuvem (Azure, AWS, GCP) e internals de Linux. Também contribui no frontend (Vue, React) quando o projeto exige."
   },
   "work": [
     {
@@ -40,16 +40,20 @@
       "endDate": null,
       "highlights": [
         {
-          "en": "Managed an upgrade project involving JavaScript, Java, Python and Perl components.",
-          "pt": "Gerenciei um projeto de atualização envolvendo componentes em JavaScript, Java, Python e Perl."
+          "en": "Built a Python system for network field operations, communicating with routers over Telnet and SSH to manage and monitor them; also helped on the JavaScript frontend and Java/Hibernate backend.",
+          "pt": "Construí um sistema em Python para operações de campo de rede, comunicando-se com roteadores via Telnet e SSH para gerenciamento e monitoramento; também ajudei no frontend em JavaScript e no backend em Java/Hibernate."
         },
         {
-          "en": "Played a key role in OS upgrades and server communication optimizations.",
-          "pt": "Tive papel fundamental em atualizações de sistema operacional e otimizações de comunicação entre servidores."
+          "en": "Moved to a sibling project rebuilding the same domain on microservices with Kafka as the event backbone, developing the service that routed UI requests to routers.",
+          "pt": "Migrei para um projeto irmão que reconstruía o mesmo domínio em microsserviços usando Kafka como backbone de eventos, desenvolvendo o serviço que roteava requisições da UI para os roteadores."
         },
         {
-          "en": "Deepened expertise in Python, Linux system administration and networking.",
-          "pt": "Aprofundei conhecimentos em Python, administração de sistemas Linux e redes."
+          "en": "Helped design the architecture extending router communication from Telnet/SSH to REST APIs, and managed Kubernetes Helm charts and Grafana dashboards for observability.",
+          "pt": "Ajudei a projetar a arquitetura que estendeu a comunicação com roteadores de Telnet/SSH para APIs REST, e gerenciei charts Helm no Kubernetes e dashboards Grafana para observabilidade."
+        },
+        {
+          "en": "Led the Linux distro upgrade for internal infrastructure, resolving GRUB failures and kernel panics to ensure a smooth migration.",
+          "pt": "Liderei a atualização da distribuição Linux da infraestrutura interna, resolvendo falhas de GRUB e kernel panics para garantir uma migração tranquila."
         }
       ],
       "technologies": ["Python", "Linux", "Networking", "Java", "Perl"]
@@ -65,16 +69,20 @@
       "endDate": "2022-05",
       "highlights": [
         {
-          "en": "Provided backend support in Python (Flask) for financial systems.",
-          "pt": "Prestei suporte backend em Python (Flask) para sistemas financeiros."
+          "en": "Owned a Kubernetes microservice retrieving bills from Brazil's national bill service and storing them for downstream use.",
+          "pt": "Fui responsável por um microsserviço em Kubernetes que buscava boletos do sistema nacional de boletos e os armazenava para uso posterior."
         },
         {
-          "en": "Worked on infrastructure using Docker, Kubernetes, RabbitMQ and GCP.",
-          "pt": "Trabalhei na infraestrutura utilizando Docker, Kubernetes, RabbitMQ e GCP."
+          "en": "Tracked down a bill-loss bug between the microservice and the legacy Django monolith by debugging inside Kubernetes containers, inspecting RabbitMQ message flow, and learning Ruby to audit a connector; fixed it on both sides.",
+          "pt": "Rastreei um bug de perda de boletos entre o microsserviço e o monólito legado em Django depurando dentro de containers Kubernetes, inspecionando o fluxo de mensagens no RabbitMQ e aprendendo Ruby para auditar um conector; corrigi o problema nos dois lados."
         },
         {
-          "en": "Resolved communication bugs between Django and Ruby components, gaining expertise in system administration and troubleshooting.",
-          "pt": "Resolvi bugs de comunicação entre componentes Django e Ruby, ganhando experiência em administração de sistemas e resolução de problemas."
+          "en": "Built a shared messaging package adopted by other Python microservices.",
+          "pt": "Construí um pacote de mensageria compartilhado, adotado por outros microsserviços em Python."
+        },
+        {
+          "en": "Helped build the Django API-based microservice that replaced the legacy monolith.",
+          "pt": "Ajudei a construir o microsserviço baseado em API Django que substituiu o monólito legado."
         }
       ],
       "technologies": ["Python", "Flask", "Docker", "Kubernetes", "RabbitMQ", "GCP"]
@@ -90,16 +98,20 @@
       "endDate": "2021-12",
       "highlights": [
         {
-          "en": "Led projects in computer vision for accessibility, including models for image-to-text conversion.",
-          "pt": "Liderei projetos de visão computacional para acessibilidade, incluindo modelos de conversão de imagem em texto."
+          "en": "Built the backend for an assistive browser, powering two in-house models: one identifying icons and outputting their meaning as words, another extracting text and context from images.",
+          "pt": "Construí o backend de um navegador assistivo, sustentando dois modelos desenvolvidos internamente: um que identifica ícones e retorna seu significado em palavras, outro que extrai texto e contexto de imagens."
         },
         {
-          "en": "Developed a Telegram bot for contextual image responses.",
-          "pt": "Desenvolvi um bot de Telegram para respostas contextuais baseadas em imagens."
+          "en": "Designed the pipeline end-to-end with Flask behind an AWS Lambda function, using Docker and Docker Compose to emulate Lambda locally; also contributed to the Vue.js browser frontend.",
+          "pt": "Desenhei o pipeline de ponta a ponta com Flask por trás de uma função AWS Lambda, usando Docker e Docker Compose para emular o Lambda localmente; também contribuí no frontend do navegador em Vue.js."
         },
         {
-          "en": "Utilized TensorFlow, Torch, Vue, Streamlit, Flask, React, Docker, Azure and AWS for development and deployment.",
-          "pt": "Utilizei TensorFlow, Torch, Vue, Streamlit, Flask, React, Docker, Azure e AWS para desenvolvimento e implantação."
+          "en": "Built the Flask backend and React frontend for a dashboard plugin integrated into QA program managed by Microsoft Products, showing QA metrics and forecasts, and helped deliver the forecasting model.",
+          "pt": "Construí o backend em Flask e o frontend em React de um plugin de dashboard integrado ao programa de QA gerenciado por productos da Microsoft, exibindo métricas de QA e previsões, e ajudei a entregar o modelo de previsão."
+        },
+        {
+          "en": "Partnered closely with the team architect on key decisions, tackling model response-time optimization and Azure plugin-approval requirements, in a team mostly composed of trainees.",
+          "pt": "Trabalhei em parceria próxima com o arquiteto do time em decisões importantes, lidando com a otimização do tempo de resposta do modelo e os requisitos de aprovação de plugins na Azure, em um time composto majoritariamente por estagiários."
         }
       ],
       "technologies": ["TensorFlow", "Torch", "Vue", "React", "Streamlit", "Docker", "Azure", "AWS"]
@@ -115,12 +127,16 @@
       "endDate": "2020-04",
       "highlights": [
         {
-          "en": "Developed machine learning models, especially in computer vision, for various projects.",
-          "pt": "Desenvolvi modelos de machine learning, especialmente em visão computacional, para diversos projetos."
+          "en": "Built and trained a computer vision model to detect and extract text from video frames, storing captured data for downstream use.",
+          "pt": "Construí e treinei um modelo de visão computacional para detectar e extrair texto de quadros de vídeo, armazenando os dados capturados para uso posterior."
         },
         {
-          "en": "Integrated models into Flask APIs using Python, TensorFlow, Torch, OpenCV, OpenPose and Selenium.",
-          "pt": "Integrei modelos em APIs Flask utilizando Python, TensorFlow, Torch, OpenCV, OpenPose e Selenium."
+          "en": "Trained a model to extract structured information from photos of bills, and built the Flask backend that received the image, ran inference and returned the parsed data.",
+          "pt": "Treinei um modelo para extrair informações estruturadas de fotos de contas, e construí o backend em Flask que recebia a imagem, executava a inferência e retornava os dados extraídos."
+        },
+        {
+          "en": "Managed the image datasets used for training, including a Qt desktop tool built to capture and label training images.",
+          "pt": "Gerenciei os conjuntos de imagens usados no treinamento, incluindo uma ferramenta desktop em Qt para captura e rotulagem de imagens de treinamento."
         },
         {
           "en": "Proficient use of Docker, Linux and SSH for development and deployment.",
@@ -196,6 +212,16 @@
       "level": {
         "en": "Fluent",
         "pt": "Fluente"
+      }
+    },
+    {
+      "name": {
+        "en": "French",
+        "pt": "Francês"
+      },
+      "level": {
+        "en": "Beginner",
+        "pt": "Iniciante"
       }
     }
   ]
