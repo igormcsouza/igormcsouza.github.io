@@ -71,16 +71,9 @@
         "link": "https://tailwindcss.com/"
       }
     ],
-    "resume": [
-      {
-        "lang": "en",
-        "link": "/cv/en"
-      },
-      {
-        "lang": "pt",
-        "link": "/cv/pt"
-      }
-    ],
+    "resume": {
+      "link": "https://igormcsouza.github.io/resume"
+    },
     "work": {
       "workplace": "Dataart",
       "linkedin": "https://www.linkedin.com/company/dataart/"

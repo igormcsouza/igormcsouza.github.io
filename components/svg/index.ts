@@ -2,8 +2,6 @@ export { default as LogoIcon } from "./logo.svg";
 export { default as PythonIcon } from "./python.svg";
 export { default as DockerIcon } from "./docker.svg";
 export { default as NextjsIcon } from "./nextjs.svg";
-export { default as BrazilIcon } from "./brazil.svg";
-export { default as EnglandIcon } from "./england.svg";
 export { default as TailwindcssIcon } from "./tailwindcss.svg";
 export { default as LinuxIcon } from "./linux.svg";
 export { default as GitIcon } from "./git.svg";

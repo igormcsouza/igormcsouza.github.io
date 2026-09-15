@@ -1,5 +1,5 @@
 import { BoxIcon } from "lucide-react";
-import { BrazilIcon, DjangoIcon, DockerIcon, EnglandIcon, FastApiIcon, FlaskIcon, GitIcon, KerasIcon, KubernetesIcon, LangchainIcon, LinuxIcon, NextjsIcon, NumpyIcon, PandasIcon, PythonIcon, ScikitlearnIcon, TailwindcssIcon, TensorflowIcon } from ".";
+import { DjangoIcon, DockerIcon, FastApiIcon, FlaskIcon, GitIcon, KerasIcon, KubernetesIcon, LangchainIcon, LinuxIcon, NextjsIcon, NumpyIcon, PandasIcon, PythonIcon, ScikitlearnIcon, TailwindcssIcon, TensorflowIcon } from ".";
 
 export default function getIcon(icon: string) {
     switch (icon) {
@@ -9,10 +9,6 @@ export default function getIcon(icon: string) {
         return DockerIcon;
       case "nextjs":
         return NextjsIcon;
-      case "pt":
-        return BrazilIcon;
-      case "en":
-        return EnglandIcon;
       case "tailwindcss":
         return TailwindcssIcon;
       case "linux":
