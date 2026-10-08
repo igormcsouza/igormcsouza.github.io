@@ -25,8 +25,8 @@
     ]
   },
   "profile": {
-    "en": "Experienced in machine learning (Python, TensorFlow, Torch), computer vision, backend development (Flask, Django and FastAPI), Docker, Kubernetes and cloud platforms (Azure, AWS, GCP). Skilled in system administration and infrastructure management (Linux, Docker, Kubernetes, RabbitMQ). Proficient in front-end frameworks (Vue, React) and skilled in system optimization and troubleshooting.",
-    "pt": "Experiente em machine learning (Python, TensorFlow, Torch), visão computacional, desenvolvimento backend (Flask, Django e FastAPI), Docker, Kubernetes e plataformas de nuvem (Azure, AWS, GCP). Habilidoso em administração de sistemas e gerenciamento de infraestrutura (Linux, Docker, Kubernetes, RabbitMQ). Proficiente em frameworks front-end (Vue, React) e em otimização e resolução de problemas de sistemas."
+    "en": "Software Engineer with 7+ years of experience focused on Python backend development, backend architecture, APIs and data processing. Experienced with Flask, Django and FastAPI, Docker, Kubernetes, Linux and cloud platforms (AWS, Azure, GCP), with hands-on experience with Oracle databases. Background in financial systems, machine learning and quantitative computing, including Python, NumPy, Scikit-learn and optimization methods. Comfortable owning backend systems, troubleshooting production environments and collaborating across technical teams.",
+    "pt": "Engenheiro de Software com mais de 7 anos de experiência, focado em desenvolvimento backend com Python, arquitetura de backend, APIs e processamento de dados. Experiência com Flask, Django e FastAPI, Docker, Kubernetes, Linux e plataformas de nuvem (AWS, Azure, GCP), incluindo experiência prática com bancos de dados Oracle. Experiência em sistemas financeiros, machine learning e computação quantitativa, incluindo Python, NumPy, Scikit-learn e métodos de otimização. Confortável em assumir responsabilidade por sistemas backend, solucionar problemas em ambientes de produção e colaborar entre equipes técnicas."
   },
   "work": [
     {
@@ -48,11 +48,18 @@
           "pt": "Tive papel fundamental em atualizações de sistema operacional e otimizações de comunicação entre servidores."
         },
         {
-          "en": "Deepened expertise in Python, Linux system administration and networking.",
-          "pt": "Aprofundei conhecimentos em Python, administração de sistemas Linux e redes."
+          "en": "Worked with Oracle databases while deepening expertise in Python, Linux system administration and networking.",
+          "pt": "Trabalhei com bancos de dados Oracle enquanto aprofundei conhecimentos em Python, administração de sistemas Linux e redes."
         }
       ],
-      "technologies": ["Python", "Linux", "Networking", "Java", "Perl"]
+      "technologies": [
+        "Python",
+        "Oracle",
+        "Linux",
+        "Networking",
+        "Java",
+        "Perl"
+      ]
     },
     {
       "company": "Liber Capital",
@@ -77,7 +84,14 @@
           "pt": "Resolvi bugs de comunicação entre componentes Django e Ruby, ganhando experiência em administração de sistemas e resolução de problemas."
         }
       ],
-      "technologies": ["Python", "Flask", "Docker", "Kubernetes", "RabbitMQ", "GCP"]
+      "technologies": [
+        "Python",
+        "Flask",
+        "Docker",
+        "Kubernetes",
+        "RabbitMQ",
+        "GCP"
+      ]
     },
     {
       "company": "Dell Lead",
@@ -102,7 +116,16 @@
           "pt": "Utilizei TensorFlow, Torch, Vue, Streamlit, Flask, React, Docker, Azure e AWS para desenvolvimento e implantação."
         }
       ],
-      "technologies": ["TensorFlow", "Torch", "Vue", "React", "Streamlit", "Docker", "Azure", "AWS"]
+      "technologies": [
+        "TensorFlow",
+        "Torch",
+        "Vue",
+        "React",
+        "Streamlit",
+        "Docker",
+        "Azure",
+        "AWS"
+      ]
     },
     {
       "company": "Deeper Systems",
@@ -127,7 +150,14 @@
           "pt": "Uso proficiente de Docker, Linux e SSH para desenvolvimento e implantação."
         }
       ],
-      "technologies": ["Python", "TensorFlow", "OpenCV", "Flask", "Docker", "Linux"]
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "OpenCV",
+        "Flask",
+        "Docker",
+        "Linux"
+      ]
     }
   ],
   "education": [
@@ -153,28 +183,54 @@
         "en": "Machine Learning",
         "pt": "Machine Learning"
       },
-      "items": ["Scikit-learn", "TensorFlow", "Torch", "LLMs", "Langchain", "Computer Vision"]
+      "items": [
+        "Scikit-learn",
+        "TensorFlow",
+        "Torch",
+        "LLMs",
+        "Langchain",
+        "Computer Vision"
+      ]
     },
     {
       "category": {
         "en": "Backend",
         "pt": "Backend"
       },
-      "items": ["Python", "Flask", "Django", "FastAPI", "Next.js"]
+      "items": [
+        "Python",
+        "Flask",
+        "Django",
+        "FastAPI",
+        "Oracle",
+        "Next.js"
+      ]
     },
     {
       "category": {
         "en": "Infrastructure",
         "pt": "Infraestrutura"
       },
-      "items": ["Docker", "Kubernetes", "AMQP", "Linux", "Azure", "AWS", "GCP"]
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "AMQP",
+        "Linux",
+        "Azure",
+        "AWS",
+        "GCP"
+      ]
     },
     {
       "category": {
         "en": "Frontend",
         "pt": "Frontend"
       },
-      "items": ["React", "Vue", "TailwindCSS"]
+      "items": [
+        "React",
+        "Vue",
+        "TailwindCSS"
+      ]
     }
   ],
   "languages": [
