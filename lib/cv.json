@@ -194,6 +194,18 @@
     },
     {
       "category": {
+        "en": "Quantitative & Data",
+        "pt": "Quantitativo e Dados"
+      },
+      "items": [
+        "NumPy",
+        "Scikit-learn",
+        "Data Processing",
+        "Optimization"
+      ]
+    },
+    {
+      "category": {
         "en": "Backend",
         "pt": "Backend"
       },
